@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <p class="title">Tic-Tac-Toe</p>
+            <select name="Menu" id="">
+                <!-- <option value="1Player">One Player</option> -->
+                <option value="2player">Two Player</option>
+            </select>
+        </nav>
+        <div class="players">
+            <img src="Images/playerX.png" alt="" id="playerX">
+            <img src="Images/player0.png" alt="" id="playerO">
+        </div>
+        <div class="game">
+            <table>
+                <tr>
+                    <td><button onclick="getNumber(0)"></button></td>
+                    <td><button onclick="getNumber(1)"></button></td>
+                    <td><button onclick="getNumber(2)"></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="getNumber(3)"></button></td>
+                    <td><button onclick="getNumber(4)"></button></td>
+                    <td><button onclick="getNumber(5)"></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="getNumber(6)"></button></td>
+                    <td><button onclick="getNumber(7)"></button></td>
+                    <td><button onclick="getNumber(8)"></button></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Winner is :</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
